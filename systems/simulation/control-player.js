@@ -1,5 +1,17 @@
 "use strict";
 
+function resolveCollisions(data, entity) {
+	for (var i = 0; i < entity.collisions.length; i++) {
+		var block = data.entities.entities[entity.collisions[i]];
+		if (block.position.y < entity.position.y) {
+			entity.position.y = block.position.y;
+			entity.velocity.y = 0;
+			entity.velocity.x = 0;
+			entity.state = "idle";
+		}
+	}
+}
+
 module.exports = function(ecs, data) {
 	ecs.addEach(function(entity, elapsed) { // jshint ignore:line
 		if (entity.state === undefined) {
@@ -38,20 +50,10 @@ module.exports = function(ecs, data) {
 				entity.velocity.y = 1.5;
 				entity.state = "diving";
 			}
-			if (entity.position.y > 400) { // floor
-				entity.position.y = 400;
-				entity.velocity.y = 0;
-				entity.velocity.x = 0;
-				entity.state = "idle";
-			}
+			resolveCollisions(data, entity);
 		}
 		else if (entity.state === "diving") {
-			if (entity.position.y > 400) { // floor
-				entity.position.y = 400;
-				entity.velocity.y = 0;
-				entity.velocity.x = 0;
-				entity.state = "idle";
-			}
+			resolveCollisions(data, entity);
 		}
 	}, ["player"]);
 };

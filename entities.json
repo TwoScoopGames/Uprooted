@@ -36,19 +36,8 @@
     "destinationY": -61,
     "destinationWidth": 87,
     "destinationHeight": 186
-   }
-  },
-  {
-   "id": 1,
-   "name": "ground",
-   "position": {
-    "x": 0,
-    "y": 400
    },
-   "size": {
-    "width": 10000,
-    "height": 0
-   }
+   "collisions": []
   },
   {
    "id": 2,
@@ -69,6 +58,19 @@
     "id": 0,
     "distance": 200
    }
+  },
+  {
+   "id": 3,
+   "name": "block",
+   "position": {
+    "x": 200,
+    "y": 350
+   },
+   "size": {
+    "width": 500,
+    "height": 50
+   },
+   "collisions": []
   }
  ]
 }

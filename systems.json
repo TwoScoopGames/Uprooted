@@ -7,7 +7,6 @@
 		"splatjs:applyVelocity",
 		"splatjs:applyFriction",
 		"./systems/simulation/follow-parent",
-		"splatjs:constrainToPlayableArea",
 		"splatjs:boxCollider"
 	],
 	"renderer": [
