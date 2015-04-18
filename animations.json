@@ -114,5 +114,57 @@
     }
    }
   }
+ ],
+ "bunny": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "bunny",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 87,
+     "sourceHeight": 63
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "bunny",
+     "sourceX": 87,
+     "sourceY": 0,
+     "sourceWidth": 87,
+     "sourceHeight": 63
+    }
+   }
+  }
+ ],
+ "mole": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "mole",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 84,
+     "sourceHeight": 45
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "mole",
+     "sourceX": 84,
+     "sourceY": 0,
+     "sourceWidth": 84,
+     "sourceHeight": 45
+    }
+   }
+  }
  ]
 }

@@ -1,6 +1,8 @@
 {
  "background": "images/background.png",
+ "bunny": "images/bunny.png",
  "carrot-charge": "images/carrot-charge.png",
  "clouds-solid": "images/clouds-solid.png",
- "clouds-transparent": "images/clouds-transparent.png"
+ "clouds-transparent": "images/clouds-transparent.png",
+ "mole": "images/mole.png"
 }
