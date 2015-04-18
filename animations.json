@@ -1,1 +1,58 @@
-{}
+{
+ "background": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "background",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 1136,
+     "sourceHeight": 1280
+    }
+   }
+  }
+ ],
+ "carrot-charge": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-charge",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 522,
+     "sourceHeight": 186
+    }
+   }
+  }
+ ],
+ "clouds-solid": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "clouds-solid",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 851,
+     "sourceHeight": 33
+    }
+   }
+  }
+ ],
+ "clouds-transparent": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "clouds-transparent",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 851,
+     "sourceHeight": 33
+    }
+   }
+  }
+ ]
+}

@@ -1,1 +1,6 @@
-{}
+{
+ "background": "images/background.png",
+ "carrot-charge": "images/carrot-charge.png",
+ "clouds-solid": "images/clouds-solid.png",
+ "clouds-transparent": "images/clouds-transparent.png"
+}
