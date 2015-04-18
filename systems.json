@@ -1,0 +1,15 @@
+{
+	"simulation": [
+		"splatjs:advanceTimers",
+		"splatjs:advanceAnimations",
+		"splatjs:applyMovement2d",
+		"splatjs:applyVelocity",
+		"splatjs:applyFriction",
+		"splatjs:constrainToPlayableArea",
+		"splatjs:boxCollider"
+	],
+	"renderer": [
+		"splatjs:viewport.moveToCamera",
+		"splatjs:viewport.reset"
+	]
+}
