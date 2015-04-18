@@ -27,7 +27,9 @@ module.exports = function(data) {
 	var row = 0;
 	while (col < 200) {
 		var type = landscapes[Math.floor(Math.random() * landscapes.length)];
-		console.log("making", type, "at", row, col);
+		if (col < 10) {
+			type = "-";
+		}
 		if (type === "-") {
 			var len = Math.floor(Math.random() * 10) + 1;
 
