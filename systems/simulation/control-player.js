@@ -2,40 +2,56 @@
 
 module.exports = function(ecs, data) {
 	ecs.addEach(function(entity, elapsed) { // jshint ignore:line
-		if (entity.position.y > 400) { // floor
-			entity.position.y = 400;
-			entity.velocity.y = 0;
-			entity.velocity.x = 0;
+		if (entity.state === undefined) {
+			entity.state = "jumping";
 		}
 
-		if (data.input.button("left")) {
-			if (entity.velocity.y != 0) {
-				entity.velocity.x = 0;
-				entity.velocity.y = 1.5;
-			} else {
+		if (entity.state === "idle") {
+			if (data.input.button("left")) {
+				entity.state = "charging";
+			}
+			if (data.input.button("right")) {
+				entity.state = "charging";
+			}
+		}
+		else if (entity.state === "charging") {
+			if (data.input.button("left")) {
 				entity.charge.left += elapsed;
+			} else if (data.input.button("right")) {
+				entity.charge.right += elapsed;
+			} else {
+				entity.velocity.y = -1;
+				entity.velocity.x = (entity.charge.right - entity.charge.left) / 1000;
+				entity.charge.left = 0;
+				entity.charge.right = 0;
+				entity.state = "jumping";
 			}
-		} else if (entity.charge.left > 0) {
-			console.log("release left", entity.charge.left);
-			entity.velocity.y = -1;
-			entity.velocity.x = - entity.charge.left / 1000;
-			entity.charge.left = 0;
 		}
-		if (data.input.button("right")) {
-			if (entity.velocity.y != 0) {
+		else if (entity.state === "jumping") {
+			entity.velocity.y += 0.01; // gravity
+			if (data.input.button("left")) {
 				entity.velocity.x = 0;
 				entity.velocity.y = 1.5;
-			} else {
-				entity.charge.right += elapsed;
+				entity.state = "diving";
+			} else if (data.input.button("right")) {
+				entity.velocity.x = 0;
+				entity.velocity.y = 1.5;
+				entity.state = "diving";
 			}
-		} else if (entity.charge.right > 0) {
-			console.log("release right", entity.charge.right);
-			entity.velocity.y = -1;
-			entity.velocity.x = entity.charge.right / 1000;
-			entity.charge.right = 0;
+			if (entity.position.y > 400) { // floor
+				entity.position.y = 400;
+				entity.velocity.y = 0;
+				entity.velocity.x = 0;
+				entity.state = "idle";
+			}
 		}
-
-		entity.velocity.y += 0.01; // gravity
-
+		else if (entity.state === "diving") {
+			if (entity.position.y > 400) { // floor
+				entity.position.y = 400;
+				entity.velocity.y = 0;
+				entity.velocity.x = 0;
+				entity.state = "idle";
+			}
+		}
 	}, ["player"]);
 };
