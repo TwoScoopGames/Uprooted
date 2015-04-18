@@ -10,6 +10,7 @@
 	],
 	"renderer": [
 		"splatjs:viewport.moveToCamera",
+		"splatjs:drawRectangles",
 		"splatjs:viewport.reset"
 	]
 }

@@ -1,2 +1,16 @@
 {
+ "main": [
+  {
+   "id": 0,
+   "name": "player",
+   "position": {
+    "x": 200,
+    "y": 200
+   },
+   "size": {
+    "width": 50,
+    "height": 100
+   }
+  }
+ ]
 }
