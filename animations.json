@@ -209,56 +209,6 @@
    }
   }
  ],
- "carrot-jump-left": [
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "carrot-jump-f4",
-     "sourceX": 0,
-     "sourceY": 0,
-     "sourceWidth": 108,
-     "sourceHeight": 186
-    }
-   }
-  },
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "carrot-jump-f4",
-     "sourceX": 108,
-     "sourceY": 0,
-     "sourceWidth": 108,
-     "sourceHeight": 186
-    }
-   }
-  },
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "carrot-jump-f4",
-     "sourceX": 216,
-     "sourceY": 0,
-     "sourceWidth": 108,
-     "sourceHeight": 186
-    }
-   }
-  },
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "carrot-jump-f4",
-     "sourceX": 324,
-     "sourceY": 0,
-     "sourceWidth": 108,
-     "sourceHeight": 186
-    }
-   }
-  }
- ],
  "carrot-jump-right": [
   {
    "time": 100,
@@ -761,6 +711,130 @@
      "sourceY": 0,
      "sourceWidth": 105,
      "sourceHeight": 162
+    }
+   }
+  }
+ ],
+ "carrot-pound": [
+  {
+   "time": 50,
+   "properties": {
+    "image": {
+     "name": "carrot-pound",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 144,
+     "sourceHeight": 180
+    }
+   }
+  },
+  {
+   "time": 50,
+   "properties": {
+    "image": {
+     "name": "carrot-pound",
+     "sourceX": 144,
+     "sourceY": 0,
+     "sourceWidth": 144,
+     "sourceHeight": 180
+    }
+   }
+  },
+  {
+   "time": 50,
+   "properties": {
+    "image": {
+     "name": "carrot-pound",
+     "sourceX": 288,
+     "sourceY": 0,
+     "sourceWidth": 144,
+     "sourceHeight": 180
+    }
+   }
+  },
+  {
+   "time": 50,
+   "properties": {
+    "image": {
+     "name": "carrot-pound",
+     "sourceX": 432,
+     "sourceY": 0,
+     "sourceWidth": 144,
+     "sourceHeight": 180
+    }
+   }
+  },
+  {
+   "time": 50,
+   "properties": {
+    "image": {
+     "name": "carrot-pound",
+     "sourceX": 576,
+     "sourceY": 0,
+     "sourceWidth": 144,
+     "sourceHeight": 180
+    }
+   }
+  },
+  {
+   "time": 50,
+   "properties": {
+    "image": {
+     "name": "carrot-pound",
+     "sourceX": 720,
+     "sourceY": 0,
+     "sourceWidth": 144,
+     "sourceHeight": 180
+    }
+   }
+  }
+ ],
+ "carrot-jump-left": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-jump-left",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 183
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-jump-left",
+     "sourceX": 108,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 183
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-jump-left",
+     "sourceX": 216,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 183
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-jump-left",
+     "sourceX": 324,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 183
     }
    }
   }

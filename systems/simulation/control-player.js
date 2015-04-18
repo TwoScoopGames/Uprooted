@@ -58,14 +58,11 @@ module.exports = function(ecs, data) {
 		}
 		if (entity.state === "jumping") {
 			entity.velocity.y += 0.01; // gravity
-			if (data.input.button("left")) {
+			if (data.input.button("left") || data.input.button("right")) {
 				entity.velocity.x = 0;
 				entity.velocity.y = 1.5;
 				entity.state = "diving";
-			} else if (data.input.button("right")) {
-				entity.velocity.x = 0;
-				entity.velocity.y = 1.5;
-				entity.state = "diving";
+				setAnimation(entity, "carrot-pound", false);
 			}
 			resolveCollisions(data, entity);
 		}
