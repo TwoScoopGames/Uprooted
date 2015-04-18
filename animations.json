@@ -13,20 +13,6 @@
    }
   }
  ],
- "carrot-idle": [
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "carrot-charge",
-     "sourceX": 0,
-     "sourceY": 0,
-     "sourceWidth": 87,
-     "sourceHeight": 186
-    }
-   }
-  }
- ],
  "carrot-charge-intro": [
   {
    "time": 100,
@@ -627,6 +613,154 @@
      "sourceY": 0,
      "sourceWidth": 528,
      "sourceHeight": 177
+    }
+   }
+  }
+ ],
+ "fence": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "fence",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 122,
+     "sourceHeight": 64
+    }
+   }
+  }
+ ],
+ "ground10-mole": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground10-mole",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 64,
+     "sourceHeight": 64
+    }
+   }
+  }
+ ],
+ "ground11-mole": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground11-mole",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 64,
+     "sourceHeight": 64
+    }
+   }
+  }
+ ],
+ "ground12-mole": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground12-mole",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 64,
+     "sourceHeight": 64
+    }
+   }
+  }
+ ],
+ "ground7-mole": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground7-mole",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 64,
+     "sourceHeight": 64
+    }
+   }
+  }
+ ],
+ "ground8-mole": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground8-mole",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 64,
+     "sourceHeight": 64
+    }
+   }
+  }
+ ],
+ "ground9-mole": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground9-mole",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 64,
+     "sourceHeight": 64
+    }
+   }
+  }
+ ],
+ "carrot-idle": [
+  {
+   "time": 200,
+   "properties": {
+    "image": {
+     "name": "carrot-idle",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 105,
+     "sourceHeight": 162
+    }
+   }
+  },
+  {
+   "time": 200,
+   "properties": {
+    "image": {
+     "name": "carrot-idle",
+     "sourceX": 105,
+     "sourceY": 0,
+     "sourceWidth": 105,
+     "sourceHeight": 162
+    }
+   }
+  },
+  {
+   "time": 200,
+   "properties": {
+    "image": {
+     "name": "carrot-idle",
+     "sourceX": 210,
+     "sourceY": 0,
+     "sourceWidth": 105,
+     "sourceHeight": 162
+    }
+   }
+  },
+  {
+   "time": 200,
+   "properties": {
+    "image": {
+     "name": "carrot-idle",
+     "sourceX": 315,
+     "sourceY": 0,
+     "sourceWidth": 105,
+     "sourceHeight": 162
     }
    }
   }

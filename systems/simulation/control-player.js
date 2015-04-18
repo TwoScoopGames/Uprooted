@@ -8,7 +8,7 @@ function resolveCollisions(data, entity) {
 			entity.velocity.y = 0;
 			entity.velocity.x = 0;
 			entity.state = "idle";
-			setAnimation(entity, "carrot-idle", false);
+			setAnimation(entity, "carrot-idle", true);
 		}
 	}
 }
