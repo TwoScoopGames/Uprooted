@@ -34,7 +34,7 @@ module.exports = function(data) {
 			var len = Math.floor(Math.random() * 10) + 1;
 
 			for (var i = 0; i < len; i++) {
-				makeBlock(data.entities, "ground11", (col + i) * 96, (row * 96) + 500);
+				makeBlock(data.entities, "ground11", (col + i) * 96, (row * 96));
 			}
 			col += len;
 		}
@@ -44,12 +44,12 @@ module.exports = function(data) {
 		}
 		if (type === "/") {
 			row--;
-			makeBlock(data.entities, "ground11", col * 96, (row * 96) + 500);
+			makeBlock(data.entities, "ground11", col * 96, (row * 96));
 			col++;
 		}
 		if (type === "\\") {
 			row++;
-			makeBlock(data.entities, "ground11", col * 96, (row * 96) + 500);
+			makeBlock(data.entities, "ground11", col * 96, (row * 96));
 			col++;
 		}
 	}
