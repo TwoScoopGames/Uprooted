@@ -2,6 +2,7 @@
 	"simulation": [
 		"splatjs:advanceTimers",
 		"splatjs:advanceAnimations",
+		"./systems/simulation/control-player",
 		"splatjs:applyMovement2d",
 		"splatjs:applyVelocity",
 		"splatjs:applyFriction",
@@ -9,6 +10,7 @@
 		"splatjs:boxCollider"
 	],
 	"renderer": [
+		"splatjs:clearScreen",
 		"splatjs:viewport.moveToCamera",
 		"splatjs:drawRectangles",
 		"splatjs:viewport.reset"

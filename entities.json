@@ -10,6 +10,27 @@
    "size": {
     "width": 50,
     "height": 100
+   },
+   "player": {},
+   "charge": {
+    "left": 0,
+    "right": 0
+   },
+   "velocity": {
+    "x": 0,
+    "y": 0
+   }
+  },
+  {
+   "id": 1,
+   "name": "ground",
+   "position": {
+    "x": 0,
+    "y": 400
+   },
+   "size": {
+    "width": 10000,
+    "height": 0
    }
   }
  ]
