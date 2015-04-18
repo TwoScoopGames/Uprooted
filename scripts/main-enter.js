@@ -20,8 +20,6 @@ function makeBlock(entityPool, name, x, y) {
 
 
 module.exports = function(data) {
-	console.log("main enter");
-
 	var landscapes = [ "-", "-", "-", "/", "\\", " "];
 	var col = 0;
 	var row = 0;
