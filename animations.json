@@ -259,20 +259,6 @@
    }
   }
  ],
- "ground-8": [
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "ground-8",
-     "sourceX": 0,
-     "sourceY": 0,
-     "sourceWidth": 32,
-     "sourceHeight": 32
-    }
-   }
-  }
- ],
  "ground1": [
   {
    "time": 100,
@@ -451,20 +437,6 @@
      "sourceY": 0,
      "sourceWidth": 96,
      "sourceHeight": 96
-    }
-   }
-  }
- ],
- "ground5-06": [
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "ground5-06",
-     "sourceX": 0,
-     "sourceY": 0,
-     "sourceWidth": 32,
-     "sourceHeight": 32
     }
    }
   }
