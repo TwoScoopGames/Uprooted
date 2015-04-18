@@ -23,6 +23,9 @@ var systems = require("./systems");
 var game = new Splat.Game(canvas, animations, entities, images, input, require, scenes, sounds, systems);
 
 function percentLoaded() {
+	if (images.totalImages + sounds.totalSounds === 0) {
+		return 1;
+	}
 	return (images.loadedImages + sounds.loadedSounds) / (images.totalImages + sounds.totalSounds);
 }
 var loading = Splat.loadingScene(canvas, percentLoaded, game.scene);
