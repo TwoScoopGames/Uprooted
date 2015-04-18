@@ -15,10 +15,27 @@
    "charge": {
     "left": 0,
     "right": 0
-  },
+   },
    "velocity": {
     "x": 0,
     "y": 0
+   },
+   "animation": {
+    "time": 0,
+    "frame": 0,
+    "loop": true,
+    "speed": 1,
+    "name": "carrot-charge"
+   },
+   "image": {
+    "sourceX": 0,
+    "sourceY": 0,
+    "sourceWidth": 0,
+    "sourceHeight": 0,
+    "destinationX": -17,
+    "destinationY": -61,
+    "destinationWidth": 87,
+    "destinationHeight": 186
    }
   },
   {
@@ -49,8 +66,8 @@
     "height": 640
    },
    "follow": {
-	   "id": 0,
-	   "distance": 200
+    "id": 0,
+    "distance": 200
    }
   }
  ]

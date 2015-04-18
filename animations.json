@@ -21,7 +21,67 @@
      "name": "carrot-charge",
      "sourceX": 0,
      "sourceY": 0,
-     "sourceWidth": 522,
+     "sourceWidth": 87,
+     "sourceHeight": 186
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-charge",
+     "sourceX": 87,
+     "sourceY": 0,
+     "sourceWidth": 87,
+     "sourceHeight": 186
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-charge",
+     "sourceX": 174,
+     "sourceY": 0,
+     "sourceWidth": 87,
+     "sourceHeight": 186
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-charge",
+     "sourceX": 261,
+     "sourceY": 0,
+     "sourceWidth": 87,
+     "sourceHeight": 186
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-charge",
+     "sourceX": 348,
+     "sourceY": 0,
+     "sourceWidth": 87,
+     "sourceHeight": 186
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-charge",
+     "sourceX": 435,
+     "sourceY": 0,
+     "sourceWidth": 87,
      "sourceHeight": 186
     }
    }
