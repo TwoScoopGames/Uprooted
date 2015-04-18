@@ -41,26 +41,22 @@ module.exports = function(ecs, data) {
 				entity.state = "charging";
 				setAnimation(entity, "carrot-charge-loop", true);
 			}
-			if (!data.input.button("left") && !data.input.button("right")) {
-				entity.state = "idle";
-				setAnimation(entity, "carrot-idle", false);
-			}
 		}
-		else if (entity.state === "charging") {
+		if (entity.state === "charging-intro" || entity.state === "charging") {
 			if (data.input.button("left")) {
 				entity.charge.left += elapsed;
 			} else if (data.input.button("right")) {
 				entity.charge.right += elapsed;
 			} else {
-				entity.velocity.y = -1;
-				entity.velocity.x = (entity.charge.right - entity.charge.left) / 1000;
+				entity.velocity.y = -1.2;
+				entity.velocity.x = (entity.charge.right - entity.charge.left) / 500;
 				entity.charge.left = 0;
 				entity.charge.right = 0;
 				entity.state = "jumping";
 				setAnimation(entity, entity.velocity.x > 0 ? "carrot-jump-right" : "carrot-jump-left", false);
 			}
 		}
-		else if (entity.state === "jumping") {
+		if (entity.state === "jumping") {
 			entity.velocity.y += 0.01; // gravity
 			if (data.input.button("left")) {
 				entity.velocity.x = 0;
