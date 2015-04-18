@@ -35,6 +35,13 @@
    {
     "device": "keyboard",
     "key": "left"
+   },
+   {
+    "device": "touch",
+    "x": 0,
+    "y": 0,
+    "width": 568,
+    "height": 640,
    }
   ]
  },
@@ -48,6 +55,13 @@
    {
     "device": "keyboard",
     "key": "right"
+   },
+   {
+    "device": "touch",
+    "x": 568,
+    "y": 0,
+    "width": 568,
+    "height": 640,
    }
   ]
  }
