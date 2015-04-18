@@ -64,20 +64,27 @@ module.exports = function(data) {
 		}
 	}
 
+	for (var col = 0; col < cols.length; col++) {
+		var c = cols[col];
+		if (c !== null) {
+			var sprite = randomSprite(c.type);
+			if (c.type === "-") {
+				makeTrim(data.entities, "ground5", col, c.row - 1);
+			}
+			makeBlock(data.entities, sprite, col, c.row);
+			for (var y = 1; y < 5; y++) {
+				makeTrim(data.entities, randomSprite("-"), col, c.row + y);
+			}
+		}
+	}
+};
+
+function randomSprite(type) {
 	var sprites = {
 		"-": ["ground8", "ground9", "ground10", "ground11"],
 		"/": ["ground2"],
 		"\\": ["ground4"]
 	};
-	for (var col = 0; col < cols.length; col++) {
-		var c = cols[col];
-		if (c !== null) {
-			var possibleSprites = sprites[c.type];
-			var sprite = possibleSprites[Math.floor(Math.random() * possibleSprites.length)];
-			if (c.type === "-") {
-				makeTrim(data.entities, "ground5", col, c.row - 1);
-			}
-			makeBlock(data.entities, sprite, col, c.row);
-		}
-	}
-};
+	var possibleSprites = sprites[type];
+	return possibleSprites[Math.floor(Math.random() * possibleSprites.length)];
+}
