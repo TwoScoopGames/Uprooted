@@ -57,7 +57,7 @@ module.exports = function(ecs, data) {
 				entity.charge.left = 0;
 				entity.charge.right = 0;
 				entity.state = "jumping";
-				setAnimation(entity, "carrot-jump-f4", false);
+				setAnimation(entity, entity.velocity.x > 0 ? "carrot-jump-right" : "carrot-jump-left", false);
 			}
 		}
 		else if (entity.state === "jumping") {

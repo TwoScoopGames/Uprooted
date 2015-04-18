@@ -223,7 +223,7 @@
    }
   }
  ],
- "carrot-jump-f4": [
+ "carrot-jump-left": [
   {
    "time": 100,
    "properties": {
@@ -273,7 +273,7 @@
    }
   }
  ],
- "carrot-jump-f4": [
+ "carrot-jump-right": [
   {
    "time": 100,
    "properties": {
@@ -613,6 +613,20 @@
      "sourceY": 0,
      "sourceWidth": 70,
      "sourceHeight": 119
+    }
+   }
+  }
+ ],
+ "carrot-hurt": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-hurt",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 528,
+     "sourceHeight": 177
     }
    }
   }
