@@ -166,5 +166,377 @@
     }
    }
   }
+ ],
+ "bush1": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "bush1",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 162,
+     "sourceHeight": 120
+    }
+   }
+  }
+ ],
+ "bush2": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "bush2",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 129,
+     "sourceHeight": 93
+    }
+   }
+  }
+ ],
+ "carrot-jump-f4": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-jump-f4",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 186
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-jump-f4",
+     "sourceX": 108,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 186
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-jump-f4",
+     "sourceX": 216,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 186
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-jump-f4",
+     "sourceX": 324,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 186
+    }
+   }
+  }
+ ],
+ "ground-8": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground-8",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 32,
+     "sourceHeight": 32
+    }
+   }
+  }
+ ],
+ "ground1": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground1",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground10": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground10",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground11": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground11",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground12": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground12",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground13": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground13",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground14": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground14",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground15": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground15",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground16": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground16",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground18": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground18",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground19": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground19",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground2": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground2",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground3": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground3",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground4": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground4",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground5-06": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground5-06",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 32,
+     "sourceHeight": 32
+    }
+   }
+  }
+ ],
+ "ground5": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground5",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground6": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground6",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground7": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground7",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground8": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground8",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "ground9": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "ground9",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 96,
+     "sourceHeight": 96
+    }
+   }
+  }
+ ],
+ "tree": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "tree",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 70,
+     "sourceHeight": 119
+    }
+   }
+  }
  ]
 }
