@@ -13,7 +13,21 @@
    }
   }
  ],
- "carrot-charge": [
+ "carrot-idle": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-charge",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 87,
+     "sourceHeight": 186
+    }
+   }
+  }
+ ],
+ "carrot-charge-intro": [
   {
    "time": 100,
    "properties": {
@@ -62,6 +76,20 @@
     }
    }
   },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-charge",
+     "sourceX": 348,
+     "sourceY": 0,
+     "sourceWidth": 87,
+     "sourceHeight": 186
+    }
+   }
+  }
+ ],
+ "carrot-charge-loop": [
   {
    "time": 100,
    "properties": {
@@ -191,6 +219,56 @@
      "sourceY": 0,
      "sourceWidth": 129,
      "sourceHeight": 93
+    }
+   }
+  }
+ ],
+ "carrot-jump-f4": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-jump-f4",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 186
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-jump-f4",
+     "sourceX": 108,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 186
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-jump-f4",
+     "sourceX": 216,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 186
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-jump-f4",
+     "sourceX": 324,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 186
     }
    }
   }

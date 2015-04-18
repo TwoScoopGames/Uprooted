@@ -23,9 +23,9 @@
    "animation": {
     "time": 0,
     "frame": 0,
-    "loop": true,
+    "loop": false,
     "speed": 1,
-    "name": "carrot-charge"
+    "name": "carrot-charge-intro"
    },
    "image": {
     "sourceX": 0,

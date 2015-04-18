@@ -8,8 +8,16 @@ function resolveCollisions(data, entity) {
 			entity.velocity.y = 0;
 			entity.velocity.x = 0;
 			entity.state = "idle";
+			setAnimation(entity, "carrot-idle", false);
 		}
 	}
+}
+
+function setAnimation(entity, name, loop) {
+	entity.animation.name = name;
+	entity.animation.loop = loop;
+	entity.animation.frame = 0;
+	entity.animation.time = 0;
 }
 
 module.exports = function(ecs, data) {
@@ -20,10 +28,22 @@ module.exports = function(ecs, data) {
 
 		if (entity.state === "idle") {
 			if (data.input.button("left")) {
-				entity.state = "charging";
+				entity.state = "charging-intro";
+				setAnimation(entity, "carrot-charge-intro", false);
 			}
 			if (data.input.button("right")) {
+				entity.state = "charging-intro";
+				setAnimation(entity, "carrot-charge-intro", false);
+			}
+		}
+		if (entity.state === "charging-intro") {
+			if (entity.animation.frame === 4) {
 				entity.state = "charging";
+				setAnimation(entity, "carrot-charge-loop", true);
+			}
+			if (!data.input.button("left") && !data.input.button("right")) {
+				entity.state = "idle";
+				setAnimation(entity, "carrot-idle", false);
 			}
 		}
 		else if (entity.state === "charging") {
@@ -37,6 +57,7 @@ module.exports = function(ecs, data) {
 				entity.charge.left = 0;
 				entity.charge.right = 0;
 				entity.state = "jumping";
+				setAnimation(entity, "carrot-jump-f4", false);
 			}
 		}
 		else if (entity.state === "jumping") {
