@@ -10,6 +10,10 @@ function resolveCollisions(data, entity) {
 			entity.state = "idle";
 			setAnimation(entity, "carrot-idle", true);
 		}
+		if (block.goal) {
+			console.log("goal");
+			data.switchScene("main");
+		}
 	}
 }
 

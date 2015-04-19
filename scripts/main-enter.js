@@ -23,6 +23,7 @@ function makeTrim(entityPool, name, x, y) {
 function makeBlock(entityPool, name, x, y) {
 	var entity = makeTrim(entityPool, name, x, y);
 	entity.collisions = [];
+	return entity;
 }
 
 
@@ -32,9 +33,10 @@ module.exports = function(data) {
 	var row = 0;
 	var cols = [null];
 
-	while (col < 200) {
+	var levelWidth = 200;
+	while (col < levelWidth + 10) {
 		var type = landscapes[Math.floor(Math.random() * landscapes.length)];
-		if (col < 10) {
+		if (col < 10 || col >= levelWidth) {
 			type = "-";
 		}
 		if (type === "-") {
@@ -124,6 +126,10 @@ module.exports = function(data) {
 					makeTrim(data.entities, "ground19", col, last.row + y);
 				}
 			}
+		}
+		if (col == levelWidth + 5) {
+			var goal = makeBlock(data.entities, "ground9", col, c.row - 2);
+			goal.goal = true;
 		}
 	}
 };
