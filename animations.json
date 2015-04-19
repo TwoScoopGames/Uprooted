@@ -1214,5 +1214,33 @@
     }
    }
   }
+ ],
+ "rooted": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "rooted",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 1136,
+     "sourceHeight": 42
+    }
+   }
+  }
+ ],
+ "uprooted": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "uprooted",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 1136,
+     "sourceHeight": 42
+    }
+   }
+  }
  ]
 }

@@ -63,7 +63,9 @@
  "ground9": "images/ground9.png",
  "mole": "images/mole.png",
  "pumpkin-patch": "images/pumpkin-patch.png",
+ "rooted": "images/rooted.png",
  "title-screen": "images/title-screen.png",
  "tree-snow": "images/tree-snow.png",
- "tree": "images/tree.png"
+ "tree": "images/tree.png",
+ "uprooted": "images/uprooted.png"
 }
