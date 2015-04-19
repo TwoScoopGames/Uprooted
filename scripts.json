@@ -1,5 +1,6 @@
 [
 	"./scripts/main-enter",
 	"./scripts/main-exit",
-	"./scripts/goal-next-level"
+	"./scripts/goal-next-level",
+	"./scripts/title-next-scene"
 ]

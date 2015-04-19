@@ -2,6 +2,7 @@
 	"simulation": [
 		"splatjs:advanceTimers",
 		"splatjs:advanceAnimations",
+		"./systems/simulation/handle-key-press",
 		"./systems/simulation/control-player",
 		"splatjs:applyVelocity",
 		"./systems/simulation/follow-parent",
