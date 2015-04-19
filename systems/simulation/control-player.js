@@ -16,7 +16,10 @@ function resolveCollisions(data, entity) {
 			console.log("goal");
 
 			var cameraPos = data.entities.entities[2].position;
-			makeEntity(data.entities, "rooted", cameraPos.x, cameraPos.y + canvas.height / 2 - 21, 1136, 42);
+
+			var rooted = makeEntity(data.entities, "rooted", cameraPos.x, cameraPos.y + canvas.height / 2 - 21, 1136, 42);
+			rooted.zindex = 2;
+
 			block.image.name = "carrot-patch2";
 			block.timers.next.running = true;
 			delete entity.player;
