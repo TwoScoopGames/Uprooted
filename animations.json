@@ -41,32 +41,6 @@
    }
   }
  ],
- "bunny": [
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "bunny",
-     "sourceX": 0,
-     "sourceY": 0,
-     "sourceWidth": 87,
-     "sourceHeight": 63
-    }
-   }
-  },
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "bunny",
-     "sourceX": 87,
-     "sourceY": 0,
-     "sourceWidth": 87,
-     "sourceHeight": 63
-    }
-   }
-  }
- ],
  "mole": [
   {
    "time": 100,
@@ -1367,6 +1341,32 @@
      "sourceY": 0,
      "sourceWidth": 87,
      "sourceHeight": 54
+    }
+   }
+  }
+ ],
+ "bunny": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "bunny",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 102,
+     "sourceHeight": 84
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "bunny",
+     "sourceX": 102,
+     "sourceY": 0,
+     "sourceWidth": 102,
+     "sourceHeight": 84
     }
    }
   }

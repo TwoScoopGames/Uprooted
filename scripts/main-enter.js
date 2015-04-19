@@ -15,7 +15,7 @@ function makeBlock(entityPool, name, x, y) {
 }
 
 function makeBunny(entityPool, x, y) {
-	var entity = makeEntity(entityPool, "bunny", x, y, 87, 63);
+	var entity = makeEntity(entityPool, "bunny", x, y, 102, 64);
 	entity.animation = {
 		"time": 0,
 		"frame": 0,
