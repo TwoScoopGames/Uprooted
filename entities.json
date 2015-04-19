@@ -57,6 +57,64 @@
    }
   }
  ],
+ "credits": [
+  {
+   "id": 0,
+   "name": "bg",
+   "position": {
+    "x": 0,
+    "y": 0
+   },
+   "animation": {
+    "time": 0,
+    "frame": 0,
+    "loop": true,
+    "speed": 1,
+    "name": "alexeric-screen"
+   },
+   "image": {
+    "sourceX": 0,
+    "sourceY": 0,
+    "sourceWidth": 0,
+    "sourceHeight": 0,
+    "destinationX": 0,
+    "destinationY": 0,
+    "destinationWidth": 1136,
+    "destinationHeight": 640
+   }
+  },
+  {
+   "id": 1,
+   "name": "arrows",
+   "position": {
+    "x": 522,
+    "y": 435
+   },
+   "animation": {
+    "time": 0,
+    "frame": 0,
+    "loop": true,
+    "speed": 0.4,
+    "name": "arrows-right-f2"
+   },
+   "image": {
+    "sourceX": 0,
+    "sourceY": 0,
+    "sourceWidth": 0,
+    "sourceHeight": 0,
+    "destinationX": 0,
+    "destinationY": 0,
+    "destinationWidth": 100,
+    "destinationHeight": 67
+   },
+   "onKeyPress": {
+    "keys": [
+     "right"
+    ],
+    "script": "./scripts/credits-next-scene"
+   }
+  }
+ ],
  "controls": [
   {
    "id": 0,

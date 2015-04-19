@@ -1370,5 +1370,19 @@
     }
    }
   }
+ ],
+ "alexeric-screen": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "alexeric-screen",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 1136,
+     "sourceHeight": 640
+    }
+   }
+  }
  ]
 }

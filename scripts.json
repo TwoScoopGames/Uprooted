@@ -4,5 +4,6 @@
 	"./scripts/main-enter",
 	"./scripts/main-exit",
 	"./scripts/goal-next-level",
+	"./scripts/credits-next-scene",
 	"./scripts/title-next-scene"
 ]

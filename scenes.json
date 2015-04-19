@@ -2,6 +2,8 @@
 	"title": {
 		"first": true
 	},
+	"credits": {
+	},
 	"controls": {
 		"onEnter": "./scripts/controls-enter",
 		"onExit": "./scripts/controls-exit"
