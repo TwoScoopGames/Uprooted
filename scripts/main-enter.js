@@ -14,12 +14,31 @@ function makeBlock(entityPool, name, x, y) {
 	return entity;
 }
 
+function makeBunny(entityPool, x, y) {
+	var entity = makeEntity(entityPool, "bunny", x, y, 87, 63);
+	entity.animation = {
+		"time": 0,
+		"frame": 0,
+		"loop": true,
+		"speed": 1,
+		"name": "bunny"
+	};
+	entity.velocity = {
+		x: 0,
+		y: 0
+	};
+	entity.collisions = [];
+	entity.bunny = true;
+	entity.zindex = 1;
+}
 
 module.exports = function(data) {
 	var landscapes = [ "-", "-", "-", "/", "\\", " "];
 	var col = 1;
 	var row = 0;
 	var cols = [null];
+
+	makeBunny(data.entities, 300, -300);
 
 	var levelWidth = 200;
 	while (col < levelWidth + 10) {

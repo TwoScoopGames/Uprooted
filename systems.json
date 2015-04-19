@@ -4,6 +4,7 @@
 		"splatjs:advanceAnimations",
 		"./systems/simulation/handle-key-press",
 		"./systems/simulation/control-player",
+		"./systems/simulation/control-bunny",
 		"splatjs:applyVelocity",
 		"./systems/simulation/follow-parent",
 		"splatjs:boxCollider"
