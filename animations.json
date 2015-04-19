@@ -1132,5 +1132,31 @@
     }
    }
   }
+ ],
+ "arrows-right-f2": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "arrows-right-f2",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 100,
+     "sourceHeight": 67
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "arrows-right-f2",
+     "sourceX": 100,
+     "sourceY": 0,
+     "sourceWidth": 100,
+     "sourceHeight": 67
+    }
+   }
+  }
  ]
 }
