@@ -1320,5 +1320,55 @@
     }
    }
   }
+ ],
+ "bunny-die": [
+  {
+   "time": 50,
+   "properties": {
+    "image": {
+     "name": "bunny-die",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 87,
+     "sourceHeight": 54
+    }
+   }
+  },
+  {
+   "time": 50,
+   "properties": {
+    "image": {
+     "name": "bunny-die",
+     "sourceX": 87,
+     "sourceY": 0,
+     "sourceWidth": 87,
+     "sourceHeight": 54
+    }
+   }
+  },
+  {
+   "time": 50,
+   "properties": {
+    "image": {
+     "name": "bunny-die",
+     "sourceX": 174,
+     "sourceY": 0,
+     "sourceWidth": 87,
+     "sourceHeight": 54
+    }
+   }
+  },
+  {
+   "time": 50,
+   "properties": {
+    "image": {
+     "name": "bunny-die",
+     "sourceX": 261,
+     "sourceY": 0,
+     "sourceWidth": 87,
+     "sourceHeight": 54
+    }
+   }
+  }
  ]
 }

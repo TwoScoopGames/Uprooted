@@ -7,6 +7,8 @@ module.exports = function(ecs, data) {
 				var block = data.entities.entities[entity.collisions[i]];
 				if (block.player) {
 					if (block.state === "diving") {
+						entity.animation.name = "bunny-die";
+						data.sounds.play("bunny-die");
 						delete entity.collisions;
 						break;
 					} else {
