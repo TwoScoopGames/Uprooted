@@ -90,6 +90,7 @@ module.exports = function(ecs, data) {
 				entity.velocity.x = 0;
 				entity.velocity.y = 1.5;
 				entity.state = "diving";
+				data.sounds.play("dive");
 				setAnimation(entity, "carrot-pound", false);
 			}
 			resolveCollisions(data, entity);
