@@ -39,7 +39,6 @@ module.exports = function(data) {
 	var cols = [null];
 
 	data.sounds.play("Rolemusic_-_07_-_Beach_Wedding_Dance", true);
-	makeBunny(data.entities, 300, -300);
 
 	var levelWidth = 200;
 	while (col < levelWidth + 10) {
@@ -52,6 +51,12 @@ module.exports = function(data) {
 
 			for (var i = 0; i < len; i++) {
 				cols.push({type: type, row: row});
+			}
+
+			if (col >= 10 && len > 3 && Math.random() > 0.6) {
+				var bx = (col + 1) * tileSize;
+				var by = (row - 2) * tileSize;
+				makeBunny(data.entities, bx, by);
 			}
 			col += len;
 		}
