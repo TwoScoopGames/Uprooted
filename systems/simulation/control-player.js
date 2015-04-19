@@ -12,7 +12,10 @@ function resolveCollisions(data, entity) {
 		}
 		if (block.goal) {
 			console.log("goal");
-			data.switchScene("main");
+			block.timers.next.running = true;
+			entity.state = "idle";
+			entity.velocity.x = 0;
+			entity.velocity.y = 0;
 		}
 	}
 }

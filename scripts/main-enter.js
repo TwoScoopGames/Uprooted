@@ -130,6 +130,14 @@ module.exports = function(data) {
 		if (col == levelWidth + 5) {
 			var goal = makeBlock(data.entities, "ground9", col, c.row - 2);
 			goal.goal = true;
+			goal.timers = {
+				next: {
+					running: false,
+					time: 0,
+					max: 3000,
+					script: "./scripts/goal-next-level"
+				}
+			};
 		}
 	}
 };
