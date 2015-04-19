@@ -9,6 +9,9 @@ function resolveCollisions(data, entity) {
 			entity.position.y = block.position.y;
 			entity.velocity.y = 0;
 			entity.velocity.x = 0;
+			if (entity.state === "diving") {
+				data.sounds.play("land");
+			}
 			entity.state = "idle";
 			setAnimation(entity, "carrot-idle", true);
 		}
@@ -61,6 +64,7 @@ module.exports = function(ecs, data) {
 		if (entity.state === "charging-intro") {
 			if (entity.animation.frame === 4) {
 				entity.state = "charging";
+				data.sounds.play("charge", true);
 				setAnimation(entity, "carrot-charge-loop", true);
 			}
 		}
@@ -75,6 +79,8 @@ module.exports = function(ecs, data) {
 				entity.charge.left = 0;
 				entity.charge.right = 0;
 				entity.state = "jumping";
+				data.sounds.stop("charge");
+				data.sounds.play("jump");
 				setAnimation(entity, entity.velocity.x > 0 ? "carrot-jump-right" : "carrot-jump-left", false);
 			}
 		}
