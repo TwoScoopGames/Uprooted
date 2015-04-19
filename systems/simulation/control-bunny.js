@@ -5,9 +5,14 @@ module.exports = function(ecs, data) {
 		if (entity.collisions) {
 			for (var i = 0; i < entity.collisions.length; i++) {
 				var block = data.entities.entities[entity.collisions[i]];
-				if (block.player && block.state === "diving") {
-					delete entity.collisions;
-					break;
+				if (block.player) {
+					if (block.state === "diving") {
+						delete entity.collisions;
+						break;
+					} else {
+						block.state = "dead";
+						data.sounds.play("death");
+					}
 				}
 				if (entity.position.y + entity.size.height > block.position.y) {
 					entity.position.y = block.position.y - entity.size.height;

@@ -395,7 +395,43 @@
      "name": "carrot-hurt",
      "sourceX": 0,
      "sourceY": 0,
-     "sourceWidth": 528,
+     "sourceWidth": 132,
+     "sourceHeight": 177
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-hurt",
+     "sourceX": 132,
+     "sourceY": 0,
+     "sourceWidth": 132,
+     "sourceHeight": 177
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-hurt",
+     "sourceX": 264,
+     "sourceY": 0,
+     "sourceWidth": 132,
+     "sourceHeight": 177
+    }
+   }
+  },
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "carrot-hurt",
+     "sourceX": 396,
+     "sourceY": 0,
+     "sourceWidth": 132,
      "sourceHeight": 177
     }
    }

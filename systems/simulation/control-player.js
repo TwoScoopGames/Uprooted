@@ -36,6 +36,9 @@ function resolveCollisions(data, entity) {
 }
 
 function setAnimation(entity, name, loop) {
+	if (entity.animation.name === name) {
+		return;
+	}
 	entity.animation.name = name;
 	entity.animation.loop = loop;
 	entity.animation.frame = 0;
@@ -95,8 +98,12 @@ module.exports = function(ecs, data) {
 			}
 			resolveCollisions(data, entity);
 		}
-		else if (entity.state === "diving") {
+		if (entity.state === "diving") {
 			resolveCollisions(data, entity);
+		}
+		if (entity.state === "dead") {
+			entity.velocity.y = 1.5;
+			setAnimation(entity, "carrot-hurt", true);
 		}
 	}, ["player"]);
 };
