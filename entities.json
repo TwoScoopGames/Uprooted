@@ -37,7 +37,8 @@
     "destinationWidth": 87,
     "destinationHeight": 186
    },
-   "collisions": []
+   "collisions": [],
+   "zindex": 1
   },
   {
    "id": 2,
