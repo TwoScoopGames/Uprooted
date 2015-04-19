@@ -38,6 +38,7 @@ module.exports = function(data) {
 	var row = 0;
 	var cols = [null];
 
+	data.sounds.play("Rolemusic_-_07_-_Beach_Wedding_Dance", true);
 	makeBunny(data.entities, 300, -300);
 
 	var levelWidth = 200;
