@@ -32,6 +32,10 @@ function makeBunny(entityPool, x, y) {
 	entity.zindex = 1;
 }
 
+function makeTree(entityPool, x, y) {
+	return makeEntity(entityPool, "tree", x, y, 136, 242);
+}
+
 module.exports = function(data) {
 	var landscapes = [ "-", "-", "-", "/", "\\", " "];
 	var col = 1;
@@ -53,10 +57,16 @@ module.exports = function(data) {
 				cols.push({type: type, row: row});
 			}
 
-			if (col >= 10 && len > 3 && Math.random() > 0.6) {
+			if (col >= 10 && len > 3) {
+				var r = Math.random();
+
 				var bx = (col + 1) * tileSize;
 				var by = (row - 2) * tileSize;
-				makeBunny(data.entities, bx, by);
+				if (r > 0.6) {
+					makeBunny(data.entities, bx, by);
+				} else {
+					makeTree(data.entities, bx, (row * tileSize) - 242);
+				}
 			}
 			col += len;
 		}

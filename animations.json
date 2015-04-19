@@ -347,20 +347,6 @@
    }
   }
  ],
- "tree": [
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "tree",
-     "sourceX": 0,
-     "sourceY": 0,
-     "sourceWidth": 70,
-     "sourceHeight": 119
-    }
-   }
-  }
- ],
  "carrot-hurt": [
   {
    "time": 100,
@@ -1367,6 +1353,20 @@
      "sourceY": 0,
      "sourceWidth": 102,
      "sourceHeight": 84
+    }
+   }
+  }
+ ],
+ "tree": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "tree",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 136,
+     "sourceHeight": 242
     }
    }
   }
