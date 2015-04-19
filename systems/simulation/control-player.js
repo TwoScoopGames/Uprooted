@@ -25,6 +25,9 @@ module.exports = function(ecs, data) {
 		if (entity.state === undefined) {
 			entity.state = "jumping";
 		}
+		if (entity.position.y > 2000) {
+			data.switchScene("main");
+		}
 
 		if (entity.state === "idle") {
 			if (data.input.button("left")) {
