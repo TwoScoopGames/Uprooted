@@ -1242,5 +1242,47 @@
     }
    }
   }
+ ],
+ "charge-icon": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "charge-icon",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 101,
+     "sourceHeight": 101
+    }
+   }
+  }
+ ],
+ "clouds": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "clouds",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 932,
+     "sourceHeight": 157
+    }
+   }
+  }
+ ],
+ "clouds2": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "clouds2",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 1024,
+     "sourceHeight": 190
+    }
+   }
+  }
  ]
 }
