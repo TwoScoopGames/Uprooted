@@ -18,6 +18,8 @@ function resolveCollisions(data, entity) {
 		if (block.goal) {
 			console.log("goal");
 
+			data.sounds.play("victory");
+
 			var cameraPos = data.entities.entities[2].position;
 
 			var rooted = makeEntity(data.entities, "rooted", cameraPos.x, cameraPos.y + canvas.height / 2 - 21, 1136, 42);

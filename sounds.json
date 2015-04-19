@@ -6,5 +6,6 @@
  "dive": "sounds/dive.mp3",
  "jump": "sounds/jump.mp3",
  "land": "sounds/land.mp3",
- "rabbit-jump": "sounds/rabbit-jump.mp3"
+ "rabbit-jump": "sounds/rabbit-jump.mp3",
+ "victory": "sounds/victory.mp3"
 }
