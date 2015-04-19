@@ -2,23 +2,7 @@
 
 var tileSize = 64;
 
-function makeEntity(entityPool, name, x, y, width, height) {
-	var entity = entityPool.add();
-	entity.position = { x: x, y: y };
-	entity.size = { width: width, height: height };
-	entity.image = {
-		"name": name,
-		"sourceX": 0,
-		"sourceY": 0,
-		"sourceWidth": width,
-		"sourceHeight": height,
-		"destinationX": 0,
-		"destinationY": 0,
-		"destinationWidth": width,
-		"destinationHeight": height
-	};
-	return entity;
-}
+var makeEntity = require("../lib/make-entity");
 
 function makeTrim(entityPool, name, x, y) {
 	return makeEntity(entityPool, name, x * tileSize, y * tileSize, tileSize, tileSize);
@@ -131,7 +115,7 @@ module.exports = function(data) {
 				}
 			}
 		}
-		if (col == levelWidth + 5) {
+		if (col === levelWidth + 5) {
 			var goal = makeEntity(data.entities, "carrot-patch", col * tileSize, ((c.row - 1) * tileSize) - 15, 256, 128);
 			goal.zindex = 1;
 			goal.goal = true;

@@ -1,5 +1,7 @@
 "use strict";
 
+var makeEntity = require("../../lib/make-entity");
+
 function resolveCollisions(data, entity) {
 	for (var i = 0; i < entity.collisions.length; i++) {
 		var block = data.entities.entities[entity.collisions[i]];
@@ -12,6 +14,9 @@ function resolveCollisions(data, entity) {
 		}
 		if (block.goal) {
 			console.log("goal");
+
+			var cameraPos = data.entities.entities[2].position;
+			makeEntity(data.entities, "rooted", cameraPos.x, cameraPos.y + canvas.height / 2 - 21, 1136, 42);
 			block.image.name = "carrot-patch2";
 			block.timers.next.running = true;
 			delete entity.player;
