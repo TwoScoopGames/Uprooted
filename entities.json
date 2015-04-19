@@ -146,7 +146,7 @@
     "destinationHeight": 186
    },
    "collisions": [],
-   "zindex": 2
+   "zindex": 3
   }
  ],
  "main": [
@@ -188,7 +188,7 @@
     "destinationHeight": 186
    },
    "collisions": [],
-   "zindex": 2
+   "zindex": 3
   },
   {
    "id": 2,

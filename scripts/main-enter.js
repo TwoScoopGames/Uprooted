@@ -29,11 +29,25 @@ function makeBunny(entityPool, x, y) {
 	};
 	entity.collisions = [];
 	entity.bunny = true;
-	entity.zindex = 1;
+	entity.zindex = 2;
 }
 
 function makeTree(entityPool, x, y) {
-	return makeEntity(entityPool, "tree", x, y, 136, 242);
+	var entity = makeEntity(entityPool, "tree", x, y, 136, 242);
+	entity.zindex = 1;
+	return entity;
+}
+
+function makeBush(entityPool, x, y) {
+	var entity = makeEntity(entityPool, "bush1", x, y, 108, 80);
+	entity.zindex = 1;
+	return entity;
+}
+
+function makeFence(entityPool, x, y) {
+	var entity = makeEntity(entityPool, "fence", x, y, 122, 64);
+	entity.zindex = 1;
+	return entity;
 }
 
 module.exports = function(data) {
@@ -65,7 +79,14 @@ module.exports = function(data) {
 				if (r > 0.6) {
 					makeBunny(data.entities, bx, by);
 				} else {
-					makeTree(data.entities, bx, (row * tileSize) - 242);
+					var r = Math.random();
+					if (r > 0.7) {
+						makeTree(data.entities, bx, (row * tileSize) - 242);
+					} else if (r > 0.4) {
+						makeFence(data.entities, bx, (row * tileSize) - 64);
+					} else {
+						makeBush(data.entities, bx, (row * tileSize) - 80);
+					}
 				}
 			}
 			col += len;

@@ -67,34 +67,6 @@
    }
   }
  ],
- "bush1": [
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "bush1",
-     "sourceX": 0,
-     "sourceY": 0,
-     "sourceWidth": 162,
-     "sourceHeight": 120
-    }
-   }
-  }
- ],
- "bush2": [
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "bush2",
-     "sourceX": 0,
-     "sourceY": 0,
-     "sourceWidth": 129,
-     "sourceHeight": 93
-    }
-   }
-  }
- ],
  "ground1": [
   {
    "time": 100,
@@ -1067,34 +1039,6 @@
    }
   }
  ],
- "bush-snow": [
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "bush-snow",
-     "sourceX": 0,
-     "sourceY": 0,
-     "sourceWidth": 88,
-     "sourceHeight": 66
-    }
-   }
-  }
- ],
- "bush2-snow": [
-  {
-   "time": 100,
-   "properties": {
-    "image": {
-     "name": "bush2-snow",
-     "sourceX": 0,
-     "sourceY": 0,
-     "sourceWidth": 70,
-     "sourceHeight": 46
-    }
-   }
-  }
- ],
  "carrot-patch": [
   {
    "time": 100,
@@ -1367,6 +1311,62 @@
      "sourceY": 0,
      "sourceWidth": 136,
      "sourceHeight": 242
+    }
+   }
+  }
+ ],
+ "bush-snow": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "bush-snow",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 88,
+     "sourceHeight": 66
+    }
+   }
+  }
+ ],
+ "bush1": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "bush1",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 108,
+     "sourceHeight": 80
+    }
+   }
+  }
+ ],
+ "bush2-snow": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "bush2-snow",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 70,
+     "sourceHeight": 46
+    }
+   }
+  }
+ ],
+ "bush2": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "bush2",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 86,
+     "sourceHeight": 62
     }
    }
   }
