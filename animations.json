@@ -143,8 +143,8 @@
      "name": "ground10",
      "sourceX": 0,
      "sourceY": 0,
-     "sourceWidth": 96,
-     "sourceHeight": 96
+     "sourceWidth": 64,
+     "sourceHeight": 64
     }
    }
   }
@@ -157,8 +157,8 @@
      "name": "ground11",
      "sourceX": 0,
      "sourceY": 0,
-     "sourceWidth": 96,
-     "sourceHeight": 96
+     "sourceWidth": 64,
+     "sourceHeight": 64
     }
    }
   }

@@ -1,4 +1,6 @@
 [
+	"./scripts/controls-enter",
+	"./scripts/controls-exit",
 	"./scripts/main-enter",
 	"./scripts/main-exit",
 	"./scripts/goal-next-level",

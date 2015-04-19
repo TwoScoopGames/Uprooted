@@ -7,7 +7,7 @@ module.exports = function(ecs, data) {
 			return;
 		}
 		var camera = data.entities.entities[2];
-		if (!camera) {
+		if (!camera || camera.name !== "camera") {
 			return;
 		}
 		var ypct = Math.max(Math.min((camera.position.y + 500) / 1000.0, 1), 0);

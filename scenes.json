@@ -3,6 +3,8 @@
 		"first": true
 	},
 	"controls": {
+		"onEnter": "./scripts/controls-enter",
+		"onExit": "./scripts/controls-exit"
 	},
 	"main": {
 		"onEnter": "./scripts/main-enter",

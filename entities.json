@@ -50,10 +50,10 @@
     "destinationHeight": 67
    },
    "onKeyPress": {
-	   "keys": [
-		   "right"
-	   ],
-	   "script": "./scripts/title-next-scene"
+    "keys": [
+     "right"
+    ],
+    "script": "./scripts/title-next-scene"
    }
   }
  ],
@@ -107,6 +107,46 @@
     "destinationWidth": 100,
     "destinationHeight": 67
    }
+  },
+  {
+   "id": 2,
+   "name": "player",
+   "position": {
+    "x": 546,
+    "y": 200
+   },
+   "size": {
+    "width": 50,
+    "height": 100
+   },
+   "player": {},
+   "charge": {
+    "left": 0,
+    "right": 0
+   },
+   "velocity": {
+    "x": 0,
+    "y": 0
+   },
+   "animation": {
+    "time": 0,
+    "frame": 0,
+    "loop": false,
+    "speed": 1,
+    "name": "carrot-charge-intro"
+   },
+   "image": {
+    "sourceX": 0,
+    "sourceY": 0,
+    "sourceWidth": 0,
+    "sourceHeight": 0,
+    "destinationX": -22,
+    "destinationY": -85,
+    "destinationWidth": 87,
+    "destinationHeight": 186
+   },
+   "collisions": [],
+   "zindex": 2
   }
  ],
  "main": [
