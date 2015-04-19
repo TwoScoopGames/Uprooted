@@ -2,22 +2,26 @@
 
 var tileSize = 64;
 
-function makeTrim(entityPool, name, x, y) {
+function makeEntity(entityPool, name, x, y, width, height) {
 	var entity = entityPool.add();
-	entity.position = { x: x * tileSize, y: y * tileSize };
-	entity.size = { width: tileSize, height: tileSize };
+	entity.position = { x: x, y: y };
+	entity.size = { width: width, height: height };
 	entity.image = {
 		"name": name,
 		"sourceX": 0,
 		"sourceY": 0,
-		"sourceWidth": tileSize,
-		"sourceHeight": tileSize,
+		"sourceWidth": width,
+		"sourceHeight": height,
 		"destinationX": 0,
 		"destinationY": 0,
-		"destinationWidth": tileSize,
-		"destinationHeight": tileSize
+		"destinationWidth": width,
+		"destinationHeight": height
 	};
 	return entity;
+}
+
+function makeTrim(entityPool, name, x, y) {
+	return makeEntity(entityPool, name, x * tileSize, y * tileSize, tileSize, tileSize);
 }
 
 function makeBlock(entityPool, name, x, y) {
@@ -128,8 +132,10 @@ module.exports = function(data) {
 			}
 		}
 		if (col == levelWidth + 5) {
-			var goal = makeBlock(data.entities, "ground9", col, c.row - 2);
+			var goal = makeEntity(data.entities, "carrot-patch", col * tileSize, ((c.row - 1) * tileSize) - 15, 256, 128);
+			goal.zindex = 1;
 			goal.goal = true;
+			goal.collisions = [];
 			goal.timers = {
 				next: {
 					running: false,

@@ -12,7 +12,11 @@ function resolveCollisions(data, entity) {
 		}
 		if (block.goal) {
 			console.log("goal");
+			block.image.name = "carrot-patch2";
 			block.timers.next.running = true;
+			delete entity.player;
+			delete entity.image;
+			delete entity.animation;
 			entity.state = "idle";
 			entity.velocity.x = 0;
 			entity.velocity.y = 0;
