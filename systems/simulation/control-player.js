@@ -50,7 +50,11 @@ module.exports = function(ecs, data) {
 		if (entity.state === undefined) {
 			entity.state = "jumping";
 		}
-		if (entity.position.y > 2000) {
+		if (entity.position.y > 2000 && entity.state !== "dead") {
+			data.sounds.play("death");
+			entity.state = "dead";
+		}
+		if (entity.position.y > 3000) {
 			data.switchScene("main");
 		}
 
