@@ -1384,5 +1384,159 @@
     }
    }
   }
+ ],
+ "alex&eric-screen": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "alex&eric-screen",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 1136,
+     "sourceHeight": 640
+    }
+   }
+  }
+ ],
+ "particle-bunny": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "particle-bunny",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 12,
+     "sourceHeight": 10
+    }
+   }
+  }
+ ],
+ "particle-dirt1": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "particle-dirt1",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 8,
+     "sourceHeight": 10
+    }
+   }
+  }
+ ],
+ "particle-dirt2": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "particle-dirt2",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 10,
+     "sourceHeight": 10
+    }
+   }
+  }
+ ],
+ "particle-dirt3": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "particle-dirt3",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 10,
+     "sourceHeight": 8
+    }
+   }
+  }
+ ],
+ "particle-dirt4": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "particle-dirt4",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 10,
+     "sourceHeight": 8
+    }
+   }
+  }
+ ],
+ "particle-dirt5": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "particle-dirt5",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 10,
+     "sourceHeight": 8
+    }
+   }
+  }
+ ],
+ "particle-dirt6": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "particle-dirt6",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 10,
+     "sourceHeight": 10
+    }
+   }
+  }
+ ],
+ "particle-dirt7": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "particle-dirt7",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 12,
+     "sourceHeight": 12
+    }
+   }
+  }
+ ],
+ "particle-dirt8": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "particle-dirt8",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 18,
+     "sourceHeight": 10
+    }
+   }
+  }
+ ],
+ "particle-dirt9": [
+  {
+   "time": 100,
+   "properties": {
+    "image": {
+     "name": "particle-dirt9",
+     "sourceX": 0,
+     "sourceY": 0,
+     "sourceWidth": 8,
+     "sourceHeight": 8
+    }
+   }
+  }
  ]
 }
