@@ -5,6 +5,7 @@
 		"./systems/simulation/handle-key-press",
 		"./systems/simulation/control-player",
 		"./systems/simulation/control-bunny",
+		"./systems/simulation/control-particles",
 		"splatjs:applyVelocity",
 		"./systems/simulation/follow-parent",
 		"splatjs:boxCollider"

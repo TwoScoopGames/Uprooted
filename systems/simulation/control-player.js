@@ -37,6 +37,25 @@ function resolveCollisions(data, entity) {
 	}
 }
 
+function makeParticles(data, x, y) {
+	var imageName = "particle-dirt" + Math.floor((Math.random() * 9) + 1);
+	var image = data.images.get(imageName);
+	var particle = makeEntity(data.entities, imageName, x, y, image.width, image.height);
+	particle.zindex = 5;
+	particle.velocity = {
+		x: (Math.random() * 2.0) - 1.0,
+		y: (Math.random() * 2.0) - 1.0
+	};
+	particle.particle = true;
+	return particle;
+}
+
+function sprayParticles(data, x, y, n) {
+	for (var i = 0; i < n; i++) {
+		makeParticles(data, x, y);
+	}
+}
+
 function setAnimation(entity, name, loop) {
 	if (entity.animation.name === name) {
 		return;
@@ -90,6 +109,7 @@ module.exports = function(ecs, data) {
 				entity.state = "jumping";
 				data.sounds.stop("charge");
 				data.sounds.play("jump");
+				sprayParticles(data, entity.position.x + (entity.size.width / 2), entity.position.y + (entity.size.height / 2), 9);
 				setAnimation(entity, entity.velocity.x > 0 ? "carrot-jump-right" : "carrot-jump-left", false);
 			}
 		}
@@ -103,9 +123,15 @@ module.exports = function(ecs, data) {
 				setAnimation(entity, "carrot-pound", false);
 			}
 			resolveCollisions(data, entity);
+			if (entity.state === "idle") {
+				sprayParticles(data, entity.position.x + (entity.size.width / 2), entity.position.y + (entity.size.height / 2), 10);
+			}
 		}
 		if (entity.state === "diving") {
 			resolveCollisions(data, entity);
+			if (entity.state === "idle") {
+				sprayParticles(data, entity.position.x + (entity.size.width / 2), entity.position.y + (entity.size.height / 2), 20);
+			}
 		}
 		if (entity.state === "dead") {
 			entity.velocity.y = 1.5;
