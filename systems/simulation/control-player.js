@@ -109,7 +109,7 @@ module.exports = function(ecs, data) {
 				entity.state = "jumping";
 				data.sounds.stop("charge");
 				data.sounds.play("jump");
-				sprayParticles(data, entity.position.x + (entity.size.width / 2), entity.position.y + (entity.size.height / 2), 9);
+				sprayParticles(data, entity.position.x + (entity.size.width / 2), entity.position.y + (entity.size.height / 2), 10);
 				setAnimation(entity, entity.velocity.x > 0 ? "carrot-jump-right" : "carrot-jump-left", false);
 			}
 		}
