@@ -10,7 +10,7 @@ module.exports = function(ecs, data) { // jshint ignore:line
 			}
 		}
 
-		if (entity.onKeyPress.lastPressed === false && isPressed) {
+		if (entity.onKeyPress.lastPressed === true && !isPressed) {
 			var script = data.require(entity.onKeyPress.script);
 			script(entity, data);
 		}
