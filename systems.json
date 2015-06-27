@@ -1,62 +1,128 @@
 {
-	"simulation": [
-		{
-			"name": "splatjs:advanceTimers",
-			"scenes": ["title","credits","controls","main"]
-		},
-		{
-			"name": "splatjs:advanceAnimations",
-			"scenes": ["title","credits","controls","main"]
-		},
-		{
-			"name": "./systems/simulation/handle-key-press",
-			"scenes": ["title","credits","controls","main"]
-		},
-		{
-			"name": "./systems/simulation/control-player",
-			"scenes": ["title","credits","controls","main"]
-		},
-		{
-			"name": "./systems/simulation/control-bunny",
-			"scenes": ["title","credits","controls","main"]
-		},
-		{
-			"name": "./systems/simulation/control-particles",
-			"scenes": ["title","credits","controls","main"]
-		},
-		{
-			"name": "splatjs:applyVelocity",
-			"scenes": ["title","credits","controls","main"]
-		},
-		{
-			"name": "./systems/simulation/follow-parent",
-			"scenes": ["title","credits","controls","main"]
-		},
-		{
-			"name": "splatjs:boxCollider",
-			"scenes": ["title","credits","controls","main"]
-		}
-	],
-	"renderer": [
-		{
-			"name": "splatjs:clearScreen",
-			"scenes": ["title","credits","controls","main"]
-		},
-		{
-			"name": "./systems/renderer/draw-bg",
-			"scenes": ["title","credits","controls","main"]
-		},
-		{
-			"name": "splatjs:viewport.moveToCamera",
-			"scenes": ["title","credits","controls","main"]
-		},
-		{
-			"name": "splatjs:drawImage",
-			"scenes": ["title","credits","controls","main"]
-		},
-		{
-			"name": "splatjs:viewport.reset",
-			"scenes": ["title","credits","controls","main"]
-		}
-	]
+ "simulation": [
+  {
+   "name": "splatjs:advanceTimers",
+   "scenes": [
+    "title",
+    "credits",
+    "controls",
+    "main"
+   ]
+  },
+  {
+   "name": "splatjs:advanceAnimations",
+   "scenes": [
+    "title",
+    "credits",
+    "controls",
+    "main"
+   ]
+  },
+  {
+   "name": "./systems/simulation/handle-key-press",
+   "scenes": [
+    "title",
+    "credits",
+    "controls",
+    "main"
+   ]
+  },
+  {
+   "name": "./systems/simulation/control-player",
+   "scenes": [
+    "title",
+    "credits",
+    "controls",
+    "main"
+   ]
+  },
+  {
+   "name": "./systems/simulation/control-bunny",
+   "scenes": [
+    "controls",
+    "main"
+   ]
+  },
+  {
+   "name": "./systems/simulation/control-particles",
+   "scenes": [
+    "controls",
+    "main"
+   ]
+  },
+  {
+   "name": "splatjs:applyVelocity",
+   "scenes": [
+    "title",
+    "credits",
+    "controls",
+    "main"
+   ]
+  },
+  {
+   "name": "./systems/simulation/follow-parent",
+   "scenes": [
+    "title",
+    "credits",
+    "controls",
+    "main"
+   ]
+  },
+  {
+   "name": "splatjs:boxCollider",
+   "scenes": [
+    "title",
+    "credits",
+    "controls",
+    "main"
+   ]
+  }
+ ],
+ "renderer": [
+  {
+   "name": "splatjs:clearScreen",
+   "scenes": [
+    "title",
+    "credits",
+    "controls",
+    "main"
+   ]
+  },
+  {
+   "name": "./systems/renderer/draw-bg",
+   "scenes": [
+    "title",
+    "credits",
+    "controls",
+    "main"
+   ]
+  },
+  {
+   "name": "splatjs:viewport.moveToCamera",
+   "scenes": [
+    "title",
+    "credits",
+    "controls",
+    "main"
+   ]
+  },
+  {
+   "name": "splatjs:drawImage",
+   "scenes": [
+    "title",
+    "credits",
+    "controls",
+    "main"
+   ]
+  },
+  {
+   "name": "splatjs:viewport.reset",
+   "scenes": [
+    "title",
+    "credits",
+    "controls",
+    "main"
+   ]
+  }
+ ]
 }
